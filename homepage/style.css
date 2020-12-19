@@ -1,0 +1,20 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: gray;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  background-color: green;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+p.subtitle {
+  color: green;
+  font-size: large;
+}
