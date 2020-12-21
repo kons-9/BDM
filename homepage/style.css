@@ -1,20 +1,129 @@
-html {
+/* *** */
+/* all */
+/* *** */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
+
+.anchor {
+  display: block;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
+/* ****** */
+/* header */
+/* ****** */
+
 header {
-  background-color: gray;
-  text-align: center;
+  width: 100%;
+  height: 50px;
+  padding: 10px 4% 10px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgb(178, 245, 230);
+}
+
+header h1 {
   margin: 0;
   padding: 0;
+  font-size: 20px;
 }
+
+header ul {
+  display: flex;
+}
+
+header li {
+  margin: 0 0 0 15px;
+  font-size: 14px;
+}
+
+nav {
+  margin: 0 0 0 auto;
+}
+
+/* **** */
+/* main */
+/* **** */
+
+#content {
+  text-align: center;
+  background-image: url("./back.jpg");
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+}
+
+.box {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 50%;
+  border: 3px solid;
+  border-color: rgba(94, 255, 255, 0.164);
+  border-radius: 1em;
+  background-color: rgba(127, 255, 212, 0.349);
+}
+
+h2.subtitle {
+  color: green;
+  font-size: 20px;
+}
+
+/* 強制起こす */
+.btn-real {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(152, 152, 152, 0.43); /*アイコン色*/
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 40px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  background-image: linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.5),
+    0 2px 2px rgba(0, 0, 0, 0.19);
+  border-bottom: solid 2px #b5b5b5;
+}
+.btn-real i {
+  line-height: 80px;
+}
+.btn-real:active {
+  /*押したとき*/
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 2px 2px rgba(0, 0, 0, 0.19);
+  border-bottom: none;
+}
+
+/* footer */
+
 footer {
   background-color: green;
   text-align: center;
   margin: 0;
   padding: 0;
-}
-p.subtitle {
-  color: green;
-  font-size: large;
 }
