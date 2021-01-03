@@ -9,6 +9,10 @@
     "MS PGothic", Roboto, Helvetica, Arial, Verdana, sans-serif;
 }
 
+audio {
+  position: unset;
+}
+
 #content {
   background-image: url(./retina_wood.png);
 }
@@ -268,3 +272,4 @@ footer {
   margin: 0;
   padding: 0;
 }
+

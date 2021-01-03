@@ -8,6 +8,7 @@ function init(){
 }
 function work() {
     serial.write("n");
+    serial.read(callback)
     console.log("work");
 }
 
@@ -21,7 +22,16 @@ function reverse(){
     console.log("left");
 }
 
-function use_kasoku() {
-    serial.write("k");
-    console.log();
+function callback(data){
+    console.log(data)
+}
+
+function use_kasoku(){
+    serial.write("k")
+    console.log("use kasoku")
+}
+
+function unuse_kasoku(){
+    serial.write("a")
+    console.log("unuse kasoku")
 }

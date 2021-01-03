@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../style.css"></link>
         <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="../favicon.ico">
+        <script type="text/javascript" src="/webiopi.js"></script>
         <script type="text/javascript" src="../index.js"></script>
     </head>
 
@@ -35,24 +36,21 @@
          <div class="box1" id="up">
             <div class="box-timer box-color" id="timer">
                 <a id="to-timer" class="anchor"></a> 
-                <h1 class="subtitle">00:00:00</h2>
+                <h1 class="subtitle" id="timer-display">00:03:00</h2>
                 <div class="setting">
-                    <button class="settingbutton">start</button>
-                    <button class="settingbutton">end</button>
+                    <button class="settingbutton" id="start">start</button>
+                    <!-- <button class="settingbutton">end</button> -->
                     <button class="settingbutton">setting</button>
                 </div>
                 <ul>
-                    <li>
+                    <!-- <li>
                         hour：<input id="sdHour" name="setting" type="range" min="0" max="60" step="1" value="0" >
-                    </li>
+                    </li> -->
                     <li>
                         minute : <input id="sdMinute" name="setting" type="range" min="0" max="60" step="1" value="0">
                     </li>
                     <li>
-                        second : <input id="sdMinute" name="setting" type="range" min="0" max="60" step="1" value="0">
-                    </li>
-                    <li>
-                        <button class="settingbutton">apply</button>
+                        second : <input id="sdSecond" name="setting" type="range" min="0" max="60" step="1" value="3">
                     </li>
                 </ul>
                 
@@ -112,21 +110,17 @@
                 <div class="box-alerm" id="alerm">
                     <a id="to-alerm" class="anchor"></a>
                     
-                    <h1 class="subtitle"><i class="far fa-clock"></i> 00:00</h2>
+                    <h1 class="subtitle"><i class="far fa-clock"></i> <text id="alarm-display">15:13</text></h2>
                     <div class="setting">
-                        <button class="settingbutton">alarm set</button>
-                        <button class="settingbutton">alarm not set</button>
+                        <button class="settingbutton" id="set">Set the alarm</button>
                         <button class="settingbutton">setting</button>
                     </div>
                     <ul>
                         <li>
-                            hour：<input id="sdHour" name="setting" type="range" min="0" max="24" step="1" value="0" >
+                            hour：<input id="alHour" name="setting" type="range" min="0" max="24" step="1" value="15" >
                         </li>
                         <li>
-                            minute : <input id="sdMinute" name="setting" type="range" min="0" max="60" step="1" value="0">
-                        </li>
-                        <li>
-                            <button class="settingbutton">apply</button>
+                            minute : <input id="alMinute" name="setting" type="range" min="0" max="60" step="1" value="13">
                         </li>
                     </ul>
                     <!-- <p>目覚まし時計として設定することができます</p> -->
@@ -176,6 +170,8 @@
     <footer>
         <p>© All rights reserved by BDM.</p>
     </footer> 
-
+    <script type="text/javascript" src="./timer.js"></script> 
+    <script type="text/javascript" src="./alarm.js"></script> 
 </body>
 </html>
+
