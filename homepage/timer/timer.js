@@ -58,6 +58,7 @@ var goTimer = function () {
         document.getElementById('start').innerHTML = 'start';
         document.getElementById('timer-display').innerHTML = pretime[0]+':'+pretime[1]+':'+pretime[2];
         work();
+        alert("bomb!!")
     }
 
 }
