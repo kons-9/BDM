@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Re:ゼロから始めるBDM生活</title>
+        <link rel="stylesheet" href="../style.css"></link>
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
+        <script type="text/javascript" src="../index.js"></script>
+    </head>
+
+<body>
+    <!-- ヘッダー -->
+
+    <header>
+        <h1>
+            <a href="./index.html">
+                <!-- Re:ゼロから始めるBDM生活 -->
+                <img src="../16096451015343109.png" class="rezero">
+            </a>
+        </h1>
+        <nav class="topnav">
+            <ul>
+                <li><a href="../index.html">Top</a></li>
+                <!-- <li><a href="../history/index.html">history</a></li> -->
+                <li><a href="#">timer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 中身 -->
+    <!-- <img src="back.jpg"> -->
+
+     <div id="content">
+         <div class="box1" id="up">
+            <div class="box-timer box-color" id="timer">
+                <a id="to-timer" class="anchor"></a> 
+                <h1 class="subtitle">00:00:00</h2>
+                <div class="setting">
+                    <button class="settingbutton">start</button>
+                    <button class="settingbutton">end</button>
+                    <button class="settingbutton">setting</button>
+                </div>
+                <ul>
+                    <li>
+                        hour：<input id="sdHour" name="setting" type="range" min="0" max="60" step="1" value="0" >
+                    </li>
+                    <li>
+                        minute : <input id="sdMinute" name="setting" type="range" min="0" max="60" step="1" value="0">
+                    </li>
+                    <li>
+                        second : <input id="sdMinute" name="setting" type="range" min="0" max="60" step="1" value="0">
+                    </li>
+                    <li>
+                        <button class="settingbutton">apply</button>
+                    </li>
+                </ul>
+                
+            </div>
+        </div> 
+
+        <div class="box1">
+            <div class="box-heal box-color" id="heal">
+                <a id="to-heal" class="anchor"></a>
+                <h2 class="subtitle">healing</h2>
+                <div id="setting">
+                    <ul>
+                        <li>healing<p>
+                            <audio
+                            controls
+                            src="/media/cc0-audio/t-rex-roar.mp3">
+                                Your browser does not support the
+                                <code>audio</code> element.
+                        </audio>
+                        </p>
+                        </li>
+                        <!-- <li><img src="favicon.ico"></li> -->
+                        <li>healing<p>
+                            <audio
+                            controls
+                            src="/media/cc0-audio/t-rex-roar.mp3">
+                                Your browser does not support the
+                                <code>audio</code> element.
+                        </audio>
+                        </p>
+                        </li>
+                        <li>healing<p>
+                            <audio
+                            controls
+                            src="/media/cc0-audio/t-rex-roar.mp3">
+                                Your browser does not support the
+                                <code>audio</code> element.
+                        </audio>
+                        </p>
+                        </li>
+                        <li>healing<p>
+                            <audio
+                            controls
+                            src="/media/cc0-audio/t-rex-roar.mp3">
+                                Your browser does not support the
+                                <code>audio</code> element.
+                        </audio>
+                        </p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <p>フレデリック〜〜〜〜</p> -->
+            </div>
+
+            <div class="box2 box-color">
+
+                <div class="box-alerm" id="alerm">
+                    <a id="to-alerm" class="anchor"></a>
+                    
+                    <h1 class="subtitle"><i class="far fa-clock"></i> 00:00</h2>
+                    <div class="setting">
+                        <button class="settingbutton">alarm set</button>
+                        <button class="settingbutton">alarm not set</button>
+                        <button class="settingbutton">setting</button>
+                    </div>
+                    <ul>
+                        <li>
+                            hour：<input id="sdHour" name="setting" type="range" min="0" max="24" step="1" value="0" >
+                        </li>
+                        <li>
+                            minute : <input id="sdMinute" name="setting" type="range" min="0" max="60" step="1" value="0">
+                        </li>
+                        <li>
+                            <button class="settingbutton">apply</button>
+                        </li>
+                    </ul>
+                    <!-- <p>目覚まし時計として設定することができます</p> -->
+                </div>
+
+                <div class="box-detail" id="detail">
+                    <a id="to-detail" class="anchor"></a>
+                    <h2 class="subtitle">詳細設定</h2>
+                    <div>
+                        <ul>
+                            <li>Sounds          
+                                <select name="example1">
+                                <option value="サンプル1">Beatrice</option>
+                                <option value="サンプル2">Rem</option>
+                                <option value="サンプル3">Emillia</option>
+                                <option value="サンプル4">Ram</option>
+                                <option value="サンプル5">none</option>
+                                </select>
+                                </li>
+                            <!-- <li>スヌーズ            
+                                <select name="example2">
+                                <option value="サンプル1">あり</option>
+                                <option value="サンプル2">なし</option>
+                                </select>
+                                </li> -->
+                            <li>Reaction conditions
+                                <select name="example1">
+                                <option value="サンプル1">Accelerometer</option>
+                                <option value="サンプル2">only button</option>
+                                </select>
+                                </li>
+                            <li>offset 
+                                <!-- <input type="number" max="180" min="0" step="1.8" value="9">度 -->
+                                <button class="settingbutton" onclick="forward()">forward</button>
+                                <button class="settingbutton" onclick="reverse()">reverse</button>
+                                </li>
+                        </ul>
+                    </div>
+                    <!-- <p>詳細設定をいじることができます</p> -->
+                </div>
+
+            </div>
+        </div>
+
+    <!-- フッター -->
+
+    <footer>
+        <p>© All rights reserved by BDM.</p>
+    </footer> 
+
+</body>
+</html>

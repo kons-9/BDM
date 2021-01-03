@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Re:ゼロから始めるBDM</title>
-    <link rel="stylesheet" href="style.css"></link>
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Re:ゼロから始めるBDM生活</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script type="text/javascript" src="/webiopi.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c401911ea9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -12,103 +16,37 @@
 
     <header>
         <h1>
-            <a href="./index.html">Re:ゼロから始めるBDM</a>
+            <a href="./index.html">
+                <!-- Re:ゼロから始めるBDM生活 -->
+                <img src="./16096451015343109.png" class="rezero">
+            </a>
         </h1>
         <nav class="topnav">
             <ul>
-                <li><a href="#to-timer">タイマー</a></li>
-                <li><a href="#to-alerm">目覚まし</a></li>
-                <li><a href="#to-force">起動</a></li>
-                <li><a href="#to-history">起動履歴</a></li>
-                <li><a href="#to-heal">癒し</a></li>
-                <li><a href="#to-detail">詳細設定</a></li>
+                <li><a href="#">Top</a></li>
+                <!-- <li><a href="./history/index.html">history</a></li> -->
+                <li><a href="./timer/index.html">timer</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- 中身 -->
+    <!-- <img src="back.jpg"> -->
 
      <div id="content">
-        <div class="box"id="force">
+        <div class="box-force"id="force">
+            <h1 style="font-family: 'Caveat', cursive;">Click !!!</h1>
             <a id="to-force" class="anchor"></a>
-            <h2 class="subtitle">起動</i></h2>
-            <div class="setting">
-                <a href="#" class="btn-real">
-                    <i class="fas fa-bomb"></i>
+                <a class="btn-real" id="onclick" onclick="work()">
+                    <i class="fas fa-bomb fa-5x"></i>
                 </a>
-            </div>
-            <p>このボタンを押すと機械が作動します</p>
-            
         </div>
-
-        <div class="box" id="timer">
-            <a id="to-timer" class="anchor"></a> 
-            <h2 class="subtitle">タイマー</h2>
-            <div class="setting">
-                <button>start</button>
-                <button>end</button>
-                <button>setting</button>
-            </div>
-            <p>タイマーを設定することでその時間で作動することができます</p>
-        </div>
-
-        <div class="box" id="alerm">
-            <a id="to-alerm" class="anchor"></a>
-            <h2 class="subtitle">目覚まし</h2>
-            <div class="setting">
-                <button>on</button>
-                <button>off</button>
-                <button>setting</button>
-            </div>
-            <p>目覚まし時計として設定することができます</p>
-        </div>
-
-        <div class="box" id="history">
-            <a id="to-history" class="anchor"></a>
-            <h2 class="subtitle">睡眠履歴</h2>
-            <div id="time_history">
-                <ul>
-                    <li>11:23</li>
-                    <li>23:59</li>
-                </ul>
-            </div>
-            <p>作動した時間を記録しています</p>
-        </div>
-
-        <div class="box" id="heal">
-            <a id="to-heal" class="anchor"></a>
-            <h2 class="subtitle">癒し</h2>
-            <div id="setting">
-                <ul>
-                    <li>褒める</li>
-                    <li><img src="favicon.ico"></li>
-                    <li>けなす</li>
-                    <li><img src="favicon.ico"></li>
-                </ul>
-            </div>
-            <p>フレデリック〜〜〜〜</p>
-        </div>
-
-        <div class="box" id="detail">
-            <a id="to-detail" class="anchor"></a>
-            <h2 class="subtitle">詳細設定</h2>
-            <div>
-                <ul>
-                    <li>アラーム音</li>
-                    <li>スヌーズ</li>
-                    <li>反応条件</li>
-                </ul>
-            </div>
-            <p>詳細設定をいじることができます</p>
-        </div>
-        
     </div>
-
     <!-- フッター -->
 
-    <!-- <footer>
+    <footer>
         <p>© All rights reserved by BDM.</p>
-    </footer>  -->
+    </footer> 
 
 </body>
 </html>
