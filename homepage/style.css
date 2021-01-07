@@ -130,6 +130,12 @@ nav {
 /* main */
 /* **** */
 
+.title {
+  font-size: 40px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  }
+
 #content {
   text-align: center;
   background-size: contain;
@@ -141,7 +147,7 @@ nav {
 .box1 {
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 10px;
   border-radius: 1em;
   border-width: 1px;
@@ -174,6 +180,7 @@ nav {
   border-radius: 1em;
   border-width: 1px;
   border-color: black;
+  padding-top:15px;
 }
 
 .box2 {
@@ -184,7 +191,11 @@ nav {
   border-radius: 1em;
   border-width: 1px;
   border-color: black;
-  margin: 1px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+.box-color {
+    padding-bottom:20px;
 }
 
 .box-alerm {

@@ -17,7 +17,7 @@
         <h1>
             <a href="./index.html">
                 <!-- Re:ゼロから始めるBDM生活 -->
-                <img src="../16096451015343109.png" class="rezero">
+                <img src="../16095533212598775.png" class="rezero">
             </a>
         </h1>
         <nav class="topnav">
@@ -36,11 +36,11 @@
          <div class="box1" id="up">
             <div class="box-timer box-color" id="timer">
                 <a id="to-timer" class="anchor"></a> 
-                <h1 class="subtitle" id="timer-display">00:03:00</h2>
+                <h1 class="title">timer</h1>
+                <h1 class="subtitle" id="timer-display">00:03:00</h1>
                 <div class="setting">
                     <button class="settingbutton" id="start">start</button>
                     <!-- <button class="settingbutton">end</button> -->
-                    <button class="settingbutton">setting</button>
                 </div>
                 <ul>
                     <!-- <li>
@@ -60,41 +60,41 @@
         <div class="box1">
             <div class="box-heal box-color" id="heal">
                 <a id="to-heal" class="anchor"></a>
-                <h2 class="subtitle">healing</h2>
+                <h2 class="title">voices</h2>
                 <div id="setting">
                     <ul>
-                        <li>healing<p>
+                        <li>Rem<p>
                             <audio
                             controls
-                            src="/media/cc0-audio/t-rex-roar.mp3">
+                            src="Rem.m4a">
                                 Your browser does not support the
                                 <code>audio</code> element.
                         </audio>
                         </p>
                         </li>
                         <!-- <li><img src="favicon.ico"></li> -->
-                        <li>healing<p>
+                        <li>Emilia<p>
                             <audio
                             controls
-                            src="/media/cc0-audio/t-rex-roar.mp3">
+                            src="emilia.m4a">
                                 Your browser does not support the
                                 <code>audio</code> element.
                         </audio>
                         </p>
                         </li>
-                        <li>healing<p>
+                        <li>Ram<p>
                             <audio
                             controls
-                            src="/media/cc0-audio/t-rex-roar.mp3">
+                            src="ram.m4a">
                                 Your browser does not support the
                                 <code>audio</code> element.
                         </audio>
                         </p>
                         </li>
-                        <li>healing<p>
+                        <li>Beatrice<p>
                             <audio
                             controls
-                            src="/media/cc0-audio/t-rex-roar.mp3">
+                            src="Beatrice.m4a">
                                 Your browser does not support the
                                 <code>audio</code> element.
                         </audio>
@@ -109,11 +109,11 @@
 
                 <div class="box-alerm" id="alerm">
                     <a id="to-alerm" class="anchor"></a>
+                    <h1 class="title">alarm</h1>
                     
                     <h1 class="subtitle"><i class="far fa-clock"></i> <text id="alarm-display">15:13</text></h2>
                     <div class="setting">
                         <button class="settingbutton" id="set">Set the alarm</button>
-                        <button class="settingbutton">setting</button>
                     </div>
                     <ul>
                         <li>
@@ -128,7 +128,7 @@
 
                 <div class="box-detail" id="detail">
                     <a id="to-detail" class="anchor"></a>
-                    <h2 class="subtitle">詳細設定</h2>
+                    <h2 class="title">advanced setting</h2>
                     <div>
                         <ul>
                             <li>Sounds          
@@ -152,11 +152,14 @@
                                 <option value="サンプル2">only button</option>
                                 </select>
                                 </li>
-                            <li>offset 
+                            <li>Offset 
                                 <!-- <input type="number" max="180" min="0" step="1.8" value="9">度 -->
                                 <button class="settingbutton" onclick="forward()">forward</button>
                                 <button class="settingbutton" onclick="reverse()">reverse</button>
                                 </li>
+                            <li>Sleep
+                                <button class="settingbutton" onclick="sleep()">sleep</button>
+                            </li>
                         </ul>
                     </div>
                     <!-- <p>詳細設定をいじることができます</p> -->
